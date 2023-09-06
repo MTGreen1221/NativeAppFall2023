@@ -99,6 +99,12 @@ export default function App() {
         while(temp[index] > 26){
           temp[index] = temp[index] - 26;
         }
+        if(temp[index] === ' '){}
+        else{
+          while(temp[index] <= 0){
+            temp[index] = temp[index] + 26;
+          }
+        }
         switch (temp[index]) {
           case 1:
             temp[index] = 'a';
@@ -269,6 +275,12 @@ export default function App() {
       for(index = 0; index < temp.length; index++){
         while(temp[index] > 26){
           temp[index] = temp[index] - 26;
+        }
+        if(temp[index] === ' '){}
+        else{
+          while(temp[index] <= 0){
+            temp[index] = temp[index] + 26;
+          }
         }
         switch (temp[index]) {
           case 1:
@@ -446,6 +458,9 @@ export default function App() {
         }
       }
       for(index2 = 0; index2 < temp2.length; index2++){
+        while(temp2[index2] > 26){
+          temp2[index2] = temp2[index2] - 26;
+        }
         if(temp2[index2] === ' '){}
         else{
           while(temp2[index2] <= 0){
@@ -620,6 +635,9 @@ export default function App() {
         }
       }
       for(index2 = 0; index2 < temp2.length; index2++){
+        while(temp2[index2] > 26){
+          temp2[index2] = temp2[index2] - 26;
+        }
         if(temp2[index2] === ' '){}
         else{
           while(temp2[index2] <= 0){
